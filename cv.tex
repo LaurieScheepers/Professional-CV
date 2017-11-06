@@ -1,0 +1,278 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{needspace}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\usepackage[none]{hyphenat} % No hyphenation
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Koziol for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+%Tweak a bit off of the top margin
+\addtolength{\voffset}{-1.6cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+
+%\par{\centering
+%		{\Huge Laurie \textsc{Scheepers}
+%	}\bigskip\par}
+
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+\begin{absolutelynopagebreak}
+
+\begin{center}
+   \vspace*{\stretch{1.0}}
+   \begin{center}
+      \Huge\textbf{Laurie Scheepers}
+   \end{center}
+   \vspace*{\stretch{2.0}}
+\end{center}
+	
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & George, South Africa  | 21 Sep 1988 \\
+    \textsc{Address:}   & Oaklands, Unit nr 6, Schroder Str, 7600, Stellenbosch, South Africa \\
+    \textsc{Phone:}     & +27 83 957 9726\\
+    \textsc{ID:}     & 8809215211083 \\
+    \textsc{email:}     & \href{mailto:laurscheepers@gmail.com}{laurscheepers@gmail.com}
+\end{tabular}
+
+%Section: Work Experience at the top
+
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Nov 2017 - Forever} & Owner at \href{www.laurcode.com}{LaurCode} \\&\emph{Freelancing \& Contract development work}\\&\footnotesize{Decided to take my career to the next step by registering my own domain and starting to promote myself as an independent freelancer, specializing in mobile development \& design. Website is still in development, but I can be contacted at \href{mailto:laurie@laurcode.com}{laurie@laurcode.com}.} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2017 - Nov 2017} & Senior Android Developer at \href{www.eventcloud.co}{eventcloud} \\&\emph{Main eventcloud Android app}\\&\footnotesize{Was lead of Android in a team of two. I decided to resign because of personal reasons after 2 months. Details for reasons of leaving and demo/screenshots of my work on the app on request as it is not on the Play Store yet.} \\
+
+\multicolumn{2}{c}{} \\
+\textsc{Mar 2017 - Ongoing} & Developer at \href{www.sudonum.com}{Sudonum} \\&\emph{Click-To-Call Library}\\&\footnotesize{Part-time freelance work at Sudonum, a call tracking and communication company, responsible for developing a VoIP library for Android \& Web that uses \href{https://en.wikipedia.org/wiki/WebRTC}{WebRTC} as a communication protocol. There is still ongoing work done scheduled for later in the year when the API's are ready to be consumed by a mobile app.). WebRTC is very powerful and interesting, and I think there will be a LOT more WebRTC tools in the future as it grows and becomes part of \href{https://en.wikipedia.org/wiki/Internet_of_things}{IoT}} \\
+
+\multicolumn{2}{c}{} \\
+\textsc{Sep 2016 - Ongoing} & Senior Android Developer at \href{www.kagisomedia.co.za}{Kagiso Media} \\&\emph{Realtime Audio Streaming Apps \& LiveAmp}\\&\footnotesize{Sole Android developer responsible for releasing new versions of the apps, \href{https://play.google.com/store/apps/details?id=com.kagiso.jacarandafm}{Jacaranda FM},  \href{https://play.google.com/store/apps/details?id=com.kagiso.ecr}{East Coast Radio}, and \href{https://play.google.com/store/apps/details?id=com.kagiso.soundbar}{Soundbar}. I also developed an app for a popular local TV show, \href{https://play.google.com/store/apps/details?id=com.kagiso.liveamp}{LiveAmp}. I am still doing freelance work on all these apps for Kagiso. They can all be viewed (with all the ratings, which are 4.4 - 4.8) \href{https://play.google.com/store/apps/developer?id=Kagiso+Media}{here}}. \\
+
+ \multicolumn{2}{c}{} \\
+ \textsc{Aug 2015 - Sep 2016} & Head of Product Development at \href{www.thereachtrust.org}{The Reach Trust} \\&\emph{LevelUp -  Educational Android app}\\&\footnotesize{General Head of Dev \& Lead of the Android team creating the  flag-ship product, \textbf{LevelUp}, available on the \href{https://play.google.com/store/apps/details?id=org.mylevelup}{Play Store}, it currently has a rating of 4.4. The Reach Trust is a public benefit organization that became their own business after \href{https://memeburn.com/2015/10/mxit-confirms-its-shutting-up-shop/}{Mxit's end}, mainly focusing on \href{https://it-online.co.za/2015/10/26/reach-trust-will-use-mxit-for-education/}{education and improving people's lives}. The company, after some financial difficulty and retrenchments, have since however gone on to make amazing new apps focusing on early-childhood-development (ECD) all of which (together with its ratings) can be found on the \href{https://play.google.com/store/apps/dev?id=7356513661681471434}{Play Store}} \\
+ 
+ \multicolumn{2}{c}{} \\
+ \textsc{Jan 2014 - Aug 2015} & Senior Android Developer at \href{www.mxit.com}{Mxit} \\
+ &\emph{Team Lead of Mxit Android Client}\\
+ &\emph{Team Lead of Broadcasts - One-to-many communication app}\\
+ &\footnotesize{Full-time work as team lead, managing the \href{https://en.wikipedia.org/wiki/Mxit}{Mxit} Android client (average rating of 4.6 while on the Play Store, while still maintaining the J2ME and Blackberry apps. During this time we focused on implementing VoIP functionality and a new feature called Make Friends. Also later became the lead developer responsible for developing the Android client of \textbf{Broadcasts} (unfortunately never released), an app meant to make it easy for users to receive important information from subscribed ``Channels'' by receiving scheduled push notifications. }\\
+ 
+ \multicolumn{2}{c}{} \\
+\textsc{Jan 2012 - Jan 2014} & Developer at \href{www.mxit.com}{Mxit} \\
+&\emph{Mxit - Social networking and instant messaging app} \\
+&\footnotesize{Started my career as junior developer on the J2ME version of Mxit, used by millions of people around the world. Climbed the rungs of the ladder, later becoming team lead of J2ME, as well as the Blackberry team and later joining the Android team (circa 2013). For a bit of history regarding the rise \& fall of Mxit, read \href{https://en.wikipedia.org/wiki/Mxit}{here} and \href{https://www.moneyweb.co.za/news/companies-and-deals/how-did-mxit-go-so-wrong/}{here}.}
+\\
+
+\end{tabular}
+
+\end{absolutelynopagebreak}
+
+\begin{absolutelynopagebreak}
+
+\addtolength{\voffset}{-1.8cm} % A bit of negative margin at top
+
+\section{Personal Projects \& Courses}
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Oct 2016 - Present} & \href{https://www.udemy.com/unitycourse/learn/v4/}{Learn to Code by Making Games - Complete C\# Unity Developer} \\&\footnotesize{Ongoing course in Unity, for developing cross-platform games.} \\
+
+\multicolumn{2}{c}{}\\
+\textsc{Oct 2017 - Present} &
+\href{https://www.udemy.com/app-design-with-sketch-ui-and-ux/}{App Design with Sketch: UI and UX}\\&\footnotesize{A design course about Sketch that I am currently following.} \\
+
+\multicolumn{2}{c}{}\\
+\textsc{Oct 2017 - Present} &
+\href{https://www.udemy.com/aftereffects/}{After Effects CS6: The Complete Guide to Adobe After Effects}\\&\footnotesize{A design course about Adobe After Effects that I am currently following.} \\
+
+\multicolumn{2}{c}{}\\
+\textsc{Sep 2015 - Present} &
+\href{https://play.google.com/store/apps/details?id=za.co.inflationcalc}{SA Inflation Calculator}\\&\footnotesize{A simple app that calculates what historical, inflation adjusted money is worth today in South Africa.} \\
+
+\multicolumn{2}{c}{}\\
+\textsc{Oct 2017 - Present} &
+\href{www.laurcode.com}{www.laurcode.com}\\&\footnotesize{My own personal website that will contain info on my thoughts about programming and Android specifically. Also will contain personal musings about interesting things in life. It's just basically a place to put all my ideas. Website coming soon.} \\
+
+\multicolumn{2}{c}{}\\
+\textsc{PLANNED} &
+\href{www.laurcode.com}{DiceApp}\\&\footnotesize{Inspired by Luke Rhinehart’s novel \href{https://en.wikipedia.org/wiki/The_Dice_Man}{The Dice Man}, it tells the story of a psychiatrist who begins making life decisions based on the casting of dice. I am planning on making an interesting, interactive, voice-driven app about the concepts and philosophies explained in the book. More details on request.} \\
+
+\multicolumn{2}{c}{}\\
+\textsc{PLANNED} &
+\href{www.laurcode.com}{RadioRewind}\\&\footnotesize{An app idea my father and I had that I am planning on implementing as soon as possible. Basic description: an app containing features, e.g. pausing, rewinding, recording, of a PVR/DVR (as used with DSTV), but just for radio and live stremed audio played on your computer/mobile device. More details on request.} \\
+
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{r|p{11cm}}
+
+ \textsc{2007-2011} & \textbf{Bachelors of Engineering: \textsc{Electrical, Electronic \& Computer Science}} \\
+& Stellenbosch University, Stellenbosch, South Africa \\
+& \textsc{Thesis}: ``Automatic Language Classification of Ethnicity based on South African Names'' - \small Final Grade: 75\% \textit{Cum Laude} \\
+&\normalsize \textsc{Overall Average}: 69\% \\
+
+\multicolumn{2}{c}{}\\
+
+\textsc{2002-2006} & \textbf{Paarl Boys High} \\ & \normalsize Paarl, South Africa \\
+&\textsc{Subjects}: Mathematics, Physical Science, Afrikaans, English, Latin, Accounting \\
+&\normalsize \textsc{Matric Results}: 2nd Dux, 6 A's, 91\% average, subject results on request. \\
+
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section{Honours and Rewards}
+\begin{tabular}{r|p{11cm}}
+ \textsc{2002-2006} & Paarl Boys High: Top 10 academically each year, 2nd Dux in Matric \\
+ \textsc{2006} & James Grace Eisteddfod Cup: Best classical guitarist \\
+ \textsc{2006} & Matric results: Achieved 3rd place in Western Cape in Latin \\
+ \textsc{2006} & Placed 14th nationwide in SA Taalbond Bilingualism Examination \\
+ \textsc{2006} & Placed 78th nationwide in De Beers English Olympiad \\
+ \textsc{2008, 2009} & Invited to join Golden Key International Honour Society (top 15\% of undergraduate students)
+\end{tabular}
+
+\end{absolutelynopagebreak}
+
+%Section: Languages
+
+\begin{absolutelynopagebreak}
+
+\addtolength{\voffset}{-1.0cm} % A bit of negative margin at top
+
+\section{Languages}
+\begin{tabular}{r|p{11cm}}
+ \textsc{Afrikaans} & Primary Language\\
+ \textsc{English} & Fluent\\
+ \textsc{Latin} & Studied in High School\\
+\end{tabular}
+
+\section{Computer Skills}
+
+\textit{Feel free to ask more details about my skills in development and tools used etc. The following is just a short structured summary.} \\
+
+\begin{tabular}{r|p{11cm}}
+
+ \textsc{Programming Languages} & \emph{Advanced}: \textsc{Java (Android, J2SE, Blackberry, J2ME)}, \textsc{C}, \textsc{C++} \\
+& \emph{Intermediate}: \textsc{C\#}, \textsc{HTML}, \textsc{JavaScript}, \textsc{CSS}, \textsc{Python}, Excel, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} \\
+
+\multicolumn{2}{c}{}\\
+
+ \textsc{Operating Systems} & \textsc{MacOS}, \textsc{Linux}, \textsc{Windows} \\
+ 
+ \multicolumn{2}{c}{}\\
+ 
+ \textsc{Development Environments} & \textsc{Android Studio}, \textsc{IntelliJ}, \textsc{Eclipse}, \textsc{Visual Studio}, \textsc{Adobe Creative Cloud Products}\\
+ 
+ \multicolumn{2}{c}{}\\
+ 
+ \textsc{Version Control Systems} & \textsc{Git}, \textsc{SVN} \\
+ 
+\end{tabular}
+
+\section{Interests and Activities}
+
+\textit{A long list of things that I am passionate about, in no order of importance or anything.} \\
+
+\begin{tabular}{r|p{11cm}}
+
+ \textsc{Friends \& Family} & I believe that \textbf{good connections} with \textbf{people} are what makes your life \textbf{lekker}. \\
+ \textsc{Technology} & Software, Internet, Open Source movement, AI, VR, AR, IoT, Biomimicry. \\
+ \textsc{Science} & My father, being a scientist in general, inspired a love of Mathematics, Physics, Chemistry, Computer Science and its applications in the world, in me since childhood. \\
+ \textsc{Music} & I am a musician myself and love it so much that I can talk hours about it. Started playing guitar at 11. ``Jamming'' with friends is great! \\
+ \textsc{Language} & I gained a love of languages from my mother who was an English teacher at college level for a long time. \\
+ \textsc{Reading} & Good books, fiction and non-fiction, are one of my great passions and I have maintained a love of reading since I was 11. \\
+ 
+ \multicolumn{2}{c}{}\\
+  
+ \textsc{Evolution} & Evolution of life, animal and human behaviour. \\
+ \textsc{Human Sciences} & As my brother is a clinical psychologist, I gained a new appreciation of the study of the human mind, why it works the way it does, and how it can be changed using natural and scientific means. \\
+ \textsc{Wikipedia} & Free information about anything you can think of! \\
+ \textsc{Phenomena} & Study of phenomena (old and new) fascinates me, just like it did the early humans. \\
+ \textsc{Animals \& Pets} & I absolutely love animals, especially dogs and cats (cats are my favourite, I have a one-year old girl of a real special breed called a Russian Blue). \\
+ 
+  \multicolumn{2}{c}{}\\
+  
+ \textsc{Soccer} & Great sport, was part of the Paarl Soccer Club Team (central defender), during 1999-2001. \\
+ \textsc{Tennis} & Still love tennis, and achieved Boland Provincial Colours, in 2001. \\
+ \textsc{Card Games \& Tricks} & Poker: I have been playing since childhood, preferring real games, but also playing online (Silversands Online Casino) a lot until it was made illegal in SA.\\
+ 
+  \multicolumn{2}{c}{}\\
+ 
+ \textsc{Guitar} & Member of various bands (lead guitar) during school and university years, and looking to start a new venture again soon. \\ 
+ \textsc{Singing Groups} & Member of Stellenbosch serenade group, \textsc{Die Kraaie}, from 2007-2009. \\
+ \textsc{Creative Writing} & Editor of high school annual magazine, \textsc{Die Retina}, and annual magazine of \textsc{Wilgenhof Residence}, \textsc{Die Bliksem}, in 2009 \& 2011. \\
+ 
+\end{tabular}
+
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{absolutelynopagebreak}
+
+\end{document}
