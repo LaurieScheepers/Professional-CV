@@ -3,16 +3,17 @@
 %A Few Useful Packages
 \usepackage{marvosym}
 \usepackage{needspace}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\usepackage{fontspec} 					    % for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	% other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
-\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
-\usepackage[none]{hyphenat} % No hyphenation
+\usepackage[big]{layaureo} 				    % better formatting of the A4 page
+                                            % an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				    % for Grades
+\usepackage{titlesec}					    % custom \section
+\usepackage{wasysym}                        % some default emojis!
+\usepackage{atbegshi}                       % http://ctan.org/pkg/atbegshi
+\usepackage[none]{hyphenat}                 % No hyphenation
 \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
 %Setup hyperref package, and colours for links
@@ -77,6 +78,8 @@ ItalicFont = Fontin-Italic.otf
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
 
+\addtolength{\voffset}{-1.0cm} % A bit of negative margin at top
+
 \begin{absolutelynopagebreak}
 
 \begin{center}
@@ -120,12 +123,12 @@ ItalicFont = Fontin-Italic.otf
  \textsc{Jan 2014 - Aug 2015} & Senior Android Developer at \href{www.mxit.com}{Mxit} \\
  &\emph{Team Lead of Mxit Android Client}\\
  &\emph{Team Lead of Broadcasts - One-to-many communication app}\\
- &\footnotesize{Full-time work as team lead, managing the \href{https://en.wikipedia.org/wiki/Mxit}{Mxit} Android client (average rating of 4.6 while on the Play Store, while still maintaining the J2ME and Blackberry apps. During this time we focused on implementing VoIP functionality and a new feature called Make Friends. Also later became the lead developer responsible for developing the Android client of \textbf{Broadcasts} (unfortunately never released), an app meant to make it easy for users to receive important information from subscribed ``Channels'' by receiving scheduled push notifications. }\\
+ &\footnotesize{Full-time work as team lead, managing the \href{https://en.wikipedia.org/wiki/Mxit}{Mxit} Android client (average rating of 4.6 while on the Play Store), while still maintaining the J2ME and Blackberry apps. During this time we focused on implementing VoIP functionality and a new feature called Make Friends. Also later became the lead developer responsible for developing the Android client of \textbf{Broadcasts} (unfortunately never released), an app meant to make it easy for users to receive important information from subscribed ``Channels'' by receiving scheduled push notifications. }\\
  
  \multicolumn{2}{c}{} \\
 \textsc{Jan 2012 - Jan 2014} & Developer at \href{www.mxit.com}{Mxit} \\
 &\emph{Mxit - Social networking and instant messaging app} \\
-&\footnotesize{Started my career as junior developer on the J2ME version of Mxit, used by millions of people around the world. Climbed the rungs of the ladder, later becoming team lead of J2ME, as well as the Blackberry team and later joining the Android team (circa 2013). For a bit of history regarding the rise \& fall of Mxit, read \href{https://en.wikipedia.org/wiki/Mxit}{here} and \href{https://www.moneyweb.co.za/news/companies-and-deals/how-did-mxit-go-so-wrong/}{here}.}
+&\footnotesize{Started my career as developer on the J2ME version of Mxit, used by millions of people around the world. Climbed the rungs of the ladder, later becoming team lead of J2ME and Blackberry teams and later joining the Android team (circa 2013). For a bit of history regarding the rise \& fall of Mxit, read \href{https://en.wikipedia.org/wiki/Mxit}{here} and \href{https://www.moneyweb.co.za/news/companies-and-deals/how-did-mxit-go-so-wrong/}{here}.}
 \\
 
 \end{tabular}
@@ -133,8 +136,6 @@ ItalicFont = Fontin-Italic.otf
 \end{absolutelynopagebreak}
 
 \begin{absolutelynopagebreak}
-
-\addtolength{\voffset}{-1.8cm} % A bit of negative margin at top
 
 \section{Personal Projects \& Courses}
 \begin{tabular}{r|p{11cm}}
@@ -151,19 +152,19 @@ ItalicFont = Fontin-Italic.otf
 
 \multicolumn{2}{c}{}\\
 \textsc{Sep 2015 - Present} &
-\href{https://play.google.com/store/apps/details?id=za.co.inflationcalc}{SA Inflation Calculator}\\&\footnotesize{A simple app that calculates what historical, inflation adjusted money is worth today in South Africa.} \\
+\href{https://play.google.com/store/apps/details?id=za.co.inflationcalc}{SA Inflation Calculator}\\&\footnotesize{A very simple app that calculates what historical, inflation adjusted money is worth today in South Africa.} \\
 
 \multicolumn{2}{c}{}\\
 \textsc{Oct 2017 - Present} &
-\href{www.laurcode.com}{www.laurcode.com}\\&\footnotesize{My own personal website that will contain info on my thoughts about programming and Android specifically. Also will contain personal musings about interesting things in life. It's just basically a place to put all my ideas. Website coming soon.} \\
+\href{www.laurcode.com}{www.laurcode.com}\\&\footnotesize{My own personal website that will contain my personal development portfolio as well as info on my thoughts about programming and Android specifically. It will also contain personal musings about interesting things in life. It's just basically a place to put down all my ideas. Website coming soon.} \\
 
 \multicolumn{2}{c}{}\\
 \textsc{PLANNED} &
-\href{www.laurcode.com}{DiceApp}\\&\footnotesize{Inspired by Luke Rhinehart’s novel \href{https://en.wikipedia.org/wiki/The_Dice_Man}{The Dice Man}, it tells the story of a psychiatrist who begins making life decisions based on the casting of dice. I am planning on making an interesting, interactive, voice-driven app about the concepts and philosophies explained in the book. More details on request.} \\
+\href{www.laurcode.com}{DiceApp}\\&\footnotesize{Inspired by Luke Rhinehart’s novel \href{https://en.wikipedia.org/wiki/The_Dice_Man}{The Dice Man}, it tells the story of a psychiatrist who begins making life decisions based on the casting of dice. I am planning on making an interesting, interactive, voice-driven app about the concepts and philosophies explained in the book. More details on request. All Rights Reserved.} \\
 
 \multicolumn{2}{c}{}\\
 \textsc{PLANNED} &
-\href{www.laurcode.com}{RadioRewind}\\&\footnotesize{An app idea my father and I had that I am planning on implementing as soon as possible. Basic description: an app containing features, e.g. pausing, rewinding, recording, of a PVR/DVR (as used with DSTV), but just for radio and live stremed audio played on your computer/mobile device. More details on request.} \\
+\href{www.laurcode.com}{RadioRewind}\\&\footnotesize{An app idea my father and I had that I am planning on implementing as soon as possible. Basic description: an app containing features, e.g. pausing, rewinding, recording, of a PVR/DVR (as used with DSTV), but just for radio and live streamed audio played on your computer/mobile device. More details on request. All Rights Reserved.} \\
 
 \end{tabular}
 
@@ -171,10 +172,10 @@ ItalicFont = Fontin-Italic.otf
 \section{Education}
 \begin{tabular}{r|p{11cm}}
 
- \textsc{2007-2011} & \textbf{Bachelors of Engineering: \textsc{Electrical, Electronic \& Computer Science}} \\
+ \textsc{2007-2011} & \textbf{Bachelors of Engineering: \textsc{Electrical, Electronic Engineering \& Computer Science}} \\
 & Stellenbosch University, Stellenbosch, South Africa \\
-& \textsc{Thesis}: ``Automatic Language Classification of Ethnicity based on South African Names'' - \small Final Grade: 75\% \textit{Cum Laude} \\
-&\normalsize \textsc{Overall Average}: 69\% \\
+& \textsc{Thesis}: ``Automatic Classification of Ethnicity based on South African Names'', a classification program done in C++ using probabilistic mathematical models and a subset of \textbf{Machine Learning} called \textbf{Supervised Learning}. \small Final Grade Achieved: 75\% \textit{Cum Laude} \\
+&\normalsize \textsc{Overall Average During Studies}: ~69\% \\
 
 \multicolumn{2}{c}{}\\
 
@@ -200,8 +201,6 @@ ItalicFont = Fontin-Italic.otf
 %Section: Languages
 
 \begin{absolutelynopagebreak}
-
-\addtolength{\voffset}{-1.0cm} % A bit of negative margin at top
 
 \section{Languages}
 \begin{tabular}{r|p{11cm}}
@@ -239,7 +238,7 @@ ItalicFont = Fontin-Italic.otf
 
 \begin{tabular}{r|p{11cm}}
 
- \textsc{Friends \& Family} & I believe that \textbf{good connections} with \textbf{people} are what makes your life \textbf{lekker}. \\
+ \textsc{Friends \& Family} & I believe that \textbf{good connections} with \textbf{people} are what makes your life \textbf{meaningful}. \\
  \textsc{Technology} & Software, Internet, Open Source movement, AI, VR, AR, IoT, Biomimicry. \\
  \textsc{Science} & My father, being a scientist in general, inspired a love of Mathematics, Physics, Chemistry, Computer Science and its applications in the world, in me since childhood. \\
  \textsc{Music} & I am a musician myself and love it so much that I can talk hours about it. Started playing guitar at 11. ``Jamming'' with friends is great! \\
@@ -251,19 +250,17 @@ ItalicFont = Fontin-Italic.otf
  \textsc{Evolution} & Evolution of life, animal and human behaviour. \\
  \textsc{Human Sciences} & As my brother is a clinical psychologist, I gained a new appreciation of the study of the human mind, why it works the way it does, and how it can be changed using natural and scientific means. \\
  \textsc{Wikipedia} & Free information about anything you can think of! \\
- \textsc{Phenomena} & Study of phenomena (old and new) fascinates me, just like it did the early humans. \\
  \textsc{Animals \& Pets} & I absolutely love animals, especially dogs and cats (cats are my favourite, I have a one-year old girl of a real special breed called a Russian Blue). \\
  
   \multicolumn{2}{c}{}\\
   
  \textsc{Soccer} & Great sport, was part of the Paarl Soccer Club Team (central defender), during 1999-2001. \\
  \textsc{Tennis} & Still love tennis, and achieved Boland Provincial Colours, in 2001. \\
- \textsc{Card Games \& Tricks} & Poker: I have been playing since childhood, preferring real games, but also playing online (Silversands Online Casino) a lot until it was made illegal in SA.\\
+ \textsc{Card Games \& Tricks} & Poker: I have been playing since childhood, preferring real games, but also playing online (Silversands Online Casino) a lot until it was made illegal in SA. Tricks: they are just cool \smiley{}. I developed a unique self-working mathematical card trick to easily check if a deck contains exactly 52 cards, that is much quicker and impressive than just counting the cards \smiley{}.\\
  
-  \multicolumn{2}{c}{}\\
+ \multicolumn{2}{c}{}\\
  
- \textsc{Guitar} & Member of various bands (lead guitar) during school and university years, and looking to start a new venture again soon. \\ 
- \textsc{Singing Groups} & Member of Stellenbosch serenade group, \textsc{Die Kraaie}, from 2007-2009. \\
+ \textsc{Guitar \& Bands} & Member of various bands (lead guitar) during school and university years, also part of a serenade group \textsc{Die Kraaie} during university, and looking to start a new musical venture again soon. \\
  \textsc{Creative Writing} & Editor of high school annual magazine, \textsc{Die Retina}, and annual magazine of \textsc{Wilgenhof Residence}, \textsc{Die Bliksem}, in 2009 \& 2011. \\
  
 \end{tabular}
