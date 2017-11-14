@@ -7,13 +7,14 @@
 \usepackage{xunicode,xltxtra,url,parskip} 	% other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				    % better formatting of the A4 page
+%\usepackage[big]{layaureo} 				    % better formatting of the A4 page
                                             % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				    % for Grades
 \usepackage{titlesec}					    % custom \section
 \usepackage{wasysym}                        % some default emojis!
 \usepackage{atbegshi}                       % http://ctan.org/pkg/atbegshi
 \usepackage[none]{hyphenat}                 % No hyphenation
+\usepackage[margin=0.8in]{geometry}
 \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
 %Setup hyperref package, and colours for links
@@ -37,7 +38,7 @@ ItalicFont = Fontin-Italic.otf
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 %Tweak a bit off of the top margin
-\addtolength{\voffset}{-1.6cm}
+\addtolength{\voffset}{-1.2cm}
 
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
@@ -65,7 +66,7 @@ ItalicFont = Fontin-Italic.otf
 	\begin{center}
 		\vspace*{\stretch{1.0}}
 		\begin{center}
-			\Huge\textbf{Laurie Scheepers}
+			\Huge\textbf{Laurie Scheepers, Mr.}
 		\end{center}
 		\vspace*{\stretch{2.0}}
 	\end{center}
@@ -124,26 +125,34 @@ ItalicFont = Fontin-Italic.otf
 
 \begin{absolutelynopagebreak}
 	
-	\section{Personal Projects \& Courses}
+	\section{Courses \& Personal Projects}
 	\begin{tabular}{r|p{11cm}}
+	
+		\textsc{Planned for Dec 2017} &                                                                                                                  
+		\href{https://www.udemy.com/ios-11-app-development-bootcamp/learn/v4/overview}{iOS 11 \& Swift 4 - The Complete iOS App Development Bootcamp}\\&\footnotesize{A planned iOS course (already enrolled) that I will complete in 2018. Decided to focus on Swift rather than Objective C (that can be learnt on the side - it's just a language).} \\
 		
+		\multicolumn{2}{c}{} \\
+		\textsc{Planned for Dec 2017} &                                                                                                                  
+		\href{https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/overview}{The Complete React Native and Redux Course}\\&\footnotesize{Planned React Native course (already enrolled) that I will complete in 2018. React is the only cross-platform technology that I am willing to learn as the others are not good enough in my opinion.} \\
+		
+		\multicolumn{2}{c}{} \\
+		\textsc{Oct 2017 - Present} &                                                                                                                  
+		\href{https://www.udemy.com/app-design-with-sketch-ui-and-ux/}{App Design with Sketch: UI and UX}\\&\footnotesize{A design course about Sketch that I am currently following to upskill my passions about design.} \\
+		
+		\multicolumn{2}{c}{} \\
+		\textsc{Oct 2017 - Present} &                                                                                                                  
+		\href{https://www.udemy.com/aftereffects/}{After Effects CS6: The Complete Guide to Adobe After Effects}\\&\footnotesize{A design course about Adobe After Effects that I am currently following to upskill my passions about animations.} \\
+		
+		\multicolumn{2}{c}{} \\
 		\textsc{Oct 2016 - Present} & \href{https://www.udemy.com/unitycourse/learn/v4/}{Learn to Code by Making Games - Complete C\# Unity Developer} \\&\footnotesize{Ongoing course in Unity, for developing cross-platform games.} \\
 		
 		\multicolumn{2}{c}{} \\
-		\textsc{Oct 2017 - Present} &                                                                                                                  
-		\href{https://www.udemy.com/app-design-with-sketch-ui-and-ux/}{App Design with Sketch: UI and UX}\\&\footnotesize{A design course about Sketch that I am currently following.} \\
-		
-		\multicolumn{2}{c}{} \\
-		\textsc{Oct 2017 - Present} &                                                                                                                  
-		\href{https://www.udemy.com/aftereffects/}{After Effects CS6: The Complete Guide to Adobe After Effects}\\&\footnotesize{A design course about Adobe After Effects that I am currently following.} \\
+		\textsc{Nov 2017 - Present} &                                                                                                                  
+		\href{www.laurcode.com}{www.laurcode.com}\\&\footnotesize{My own personal website that will contain my personal development portfolio, details about my business plan as freelancer/contractor, as well as info on my thoughts about programming and Android specifically. It will also contain personal musings about interesting things in life. It's just basically a place to put down all my ideas. Website coming soon.} \\
 		
 		\multicolumn{2}{c}{} \\
 		\textsc{Sep 2015 - Present} &                                                                                                                  
 		\href{https://play.google.com/store/apps/details?id=za.co.inflationcalc}{SA Inflation Calculator}\\&\footnotesize{A very simple app that calculates what historical, inflation adjusted money is worth today in South Africa.} \\
-		
-		\multicolumn{2}{c}{} \\
-		\textsc{Oct 2017 - Present} &                                                                                                                  
-		\href{www.laurcode.com}{www.laurcode.com}\\&\footnotesize{My own personal website that will contain my personal development portfolio as well as info on my thoughts about programming and Android specifically. It will also contain personal musings about interesting things in life. It's just basically a place to put down all my ideas. Website coming soon.} \\
 		
 		\multicolumn{2}{c}{} \\
 		\textsc{PLANNED}            &                                                                                                                  
@@ -151,7 +160,7 @@ ItalicFont = Fontin-Italic.otf
 		
 		\multicolumn{2}{c}{} \\
 		\textsc{PLANNED}            &                                                                                                                  
-		\href{www.laurcode.com}{RadioRewind}\\&\footnotesize{An app idea my father and I had that I am planning on implementing as soon as possible. Basic description: an app containing features, e.g. pausing, rewinding, recording, of a PVR/DVR (as used with DSTV), but just for radio and live streamed audio played on your computer/mobile device. More details on request. All Rights Reserved.} \\
+		\href{www.laurcode.com}{RadioRewind}\\&\footnotesize{An app idea my father and I had that I am planning on implementing as soon as possible. Basic description: an app containing features, e.g. pausing, rewinding, recording, of a PVR/DVR (as used with DSTV), but just for radio and live streamed audio played on your computer/mobile device. I may sell this idea and implement it for a company I am contracting for, I still have to decide. More details on request. All Rights Reserved.} \\
 		
 	\end{tabular}
 	
@@ -172,8 +181,12 @@ ItalicFont = Fontin-Italic.otf
 		
 	\end{tabular}
 	
+\end{absolutelynopagebreak}
+
+\begin{absolutelynopagebreak}
+
 	%Section: Scholarships and additional info
-	\section{Honours and Rewards}
+\section{Honours and Rewards}
 	\begin{tabular}{r|p{11cm}}
 		\textsc{2002-2006}  & Paarl Boys High: Top 10 academically each year, awarded full academic honours in Grade 11 and awarded 2nd Dux Medal in Matric. \\
 		\textsc{2006}       & James Grace Eisteddfod Cup: Best classical guitarist.                                                                          \\
@@ -182,14 +195,10 @@ ItalicFont = Fontin-Italic.otf
 		\textsc{2006}       & Placed 78th nationwide in De Beers English Olympiad.                                                                           \\
 		\textsc{2008, 2009} & Invited to join Golden Key International Honour Society (top 15\% of undergraduate students).                                  
 	\end{tabular}
-	
-\end{absolutelynopagebreak}
 
 %Section: Languages
 
-\addtolength{\voffset}{-0.2cm} % A bit of extra negative margin at top
-
-\begin{absolutelynopagebreak}
+\addtolength{\voffset}{-0.4cm} % A bit of extra negative margin at top
 	
 	\section{Languages}
 	\begin{tabular}{r|p{11cm}}
@@ -198,28 +207,41 @@ ItalicFont = Fontin-Italic.otf
 		\textsc{Latin}     & Studied in High School \\
 	\end{tabular}
 	
-	\section{Computer Skills}
+	\section{Digital Skills}
 	
-	\textit{Feel free to ask more details about my skills in development and tools used etc. The following is just a short structured summary.} \\
+	\textit{Feel free to ask more details about my skills in development and tools used etc. The following is just a structured summary.} \\
+	
+	\footnotesize{In general I believe that a programming language is just a language to learn, get used to the syntax and gain experience in - all languages differ in their feature set and also their purpose, one is not more difficult than the other, except for esoteric things like BrainFuck (which is made difficult on purpose as an exercise to the implementer and reader)} \\
 	
 	\begin{tabular}{r|p{11cm}}
 		
-		\textsc{Programming Languages}    & \emph{Advanced}: \textsc{Java (Android, J2SE, Blackberry, J2ME)}, \textsc{C}, \textsc{C++} \\
-		                                  & \emph{Intermediate}: \textsc{C\#}, \textsc{HTML}, \textsc{JavaScript}, \textsc{CSS}, \textsc{Python}, Excel, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} \\
+		\textsc{Programming Languages}    & \textbf{Advanced}: \textsc{Java 1.3 - 1.8 (Mobile: Android, Blackberry, J2ME)}, \textsc{C}, \textsc{C++} \\
+		                                  & \emph{Intermediate}: \textsc{C\#}, \textsc{HTML}, \textsc{JavaScript}, \textsc{CSS}, \textsc{Python}, Excel, VB, MarkDown, {\fb \LaTeX} \setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} \\
+		                                  & \emph{Starting to upskill myself in}: \textsc{Swift}, \textsc{Objective-C}, \textsc{React Native} \\
+		                                  
+		\multicolumn{2}{c}{}\\
+		
+		\textsc{Design}                   & \textsc{Learning more as I go along}: \textsc{Adobe Photoshop}, \textsc{Adobe Illustrator}, \textsc{Adobe After Effects}, \textsc{Sketch}, \textsc{Paint.NET}, Various Online Tools (AppLaunchPad, Android Asset Generator, FlatIcon, SVG things, etc\ldots) \\
 		
 		\multicolumn{2}{c}{}\\
 		
-		\textsc{Operating Systems}        & \textsc{MacOS}, \textsc{Linux}, \textsc{Windows} \\
-		 
-		\multicolumn{2}{c}{}\\
-		 
-		\textsc{Development Environments} & \textsc{Android Studio}, \textsc{IntelliJ}, \textsc{Eclipse}, \textsc{Visual Studio}, \textsc{Adobe Creative Cloud Products} \\
+		\textsc{Operating Systems}        & \textsc{MacOS} (main daily driver), \textsc{Linux} (Ubuntu, Linux Mint), \textsc{Windows} (from 3.1), \textsc{MS-DOS} (when young) \\
 		 
 		\multicolumn{2}{c}{} \\
 		 
-		\textsc{Version Control Systems}  & \textsc{Git}, \textsc{SVN} \\    
+		\textsc{Development Environments} & \textsc{Android Studio}, \textsc{IntelliJ}, \textsc{WebStorm}, \textsc{Eclipse}, \textsc{Visual Studio}, \textsc{XCode} \textsc{Adobe Creative Cloud Products} \\
+		 
+		\multicolumn{2}{c}{} \\
+		 
+		\textsc{Version Control Systems}  & \textsc{Git}, \textsc{SVN}, Own versioning used on cloud storage for other things: \textsc{Google Drive}, \textsc{Confluence Wiki}, \textsc{iCloud} \\    
 		 
 	\end{tabular}
+	
+	\textit{Interests and activities follow on next page.}
+	
+\end{absolutelynopagebreak}
+	
+\begin{absolutelynopagebreak}
 	
 	\section{Interests and Activities}
 	
@@ -245,20 +267,23 @@ ItalicFont = Fontin-Italic.otf
 		  
 		\textsc{Soccer}               & Great sport, was part of the Paarl Soccer Club Team (central defender), during 1999-2001. \\
 		\textsc{Tennis}               & Still love tennis, and achieved Boland Provincial Colours, in 2001. \\
+		
 		\textsc{Card Games \& Tricks} & Poker: I have been playing since childhood, preferring real games, but also playing online (Silversands Online                                      Casino) a lot until it was made illegal in SA. Tricks: they are just cool \smiley{}. I developed a unique                                           self-working mathematical card trick to easily check if a deck contains exactly 52 cards, that is much quicker and                                  impressive than just counting the cards \smiley{}. \\
 		 
 		\multicolumn{2}{c}{} \\
 		 
-		\textsc{Guitar \& Bands}      & Member of various bands (lead guitar) during school and university years, also part of a serenade group \textsc{Die Kraaie} during university, and looking to start a new musical venture again soon. \\
+		\textsc{Guitar \& Bands}      & Member of various bands (lead guitar) during school and university years, also part of a serenade group \textsc{Die Kraaie} during university, and looking to start a new musical venture again soon. I am a bit obsessed with guitar pedals, owning about 18 different ones. This causes a lot of consternation to my financial planner. \\
 		\textsc{Creative Writing}     & Editor of high school annual magazine, \textsc{Die Retina}, and annual magazine of \textsc{Wilgenhof Residence}, \textsc{Die Bliksem}, in 2009 \& 2011. \\
 		 
 	\end{tabular}
+	
+	\textit{and much more\ldots}
+	
+\end{absolutelynopagebreak}
 	
 	%\newpage
 	%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
 	
 	%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
-	
-\end{absolutelynopagebreak}
 
 \end{document}
