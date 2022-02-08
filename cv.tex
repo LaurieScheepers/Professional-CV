@@ -4,6 +4,7 @@
 \usepackage{marvosym}
 \usepackage{needspace}
 \usepackage{textcomp}                       % extra symbols
+\usepackage{txfonts}
 \usepackage{fontspec} 					    % for loading fonts
 \usepackage{xunicode,xltxtra,url,parskip} 	% other packages for formatting
 \RequirePackage{color,graphicx}
@@ -76,10 +77,10 @@ ItalicFont = Fontin-Italic.otf
 	
 	\begin{tabular}{rl}
 		\textsc{Place and Date of Birth:} & George, South Africa  | 21 Sep 1988                                 \\
-		\textsc{Address:}                 & Oaklands, Unit nr 6, Schroder Rd, 7600, Stellenbosch, South Africa \\
-		\textsc{Phone:}                   & +27 83 957 9726                                                     \\
+		\textsc{Address:}                 & 201 Buitenkant St, Vredehoek, Cape Town, 8001, South Africa \\
+		\textsc{Phone:}                   & +27 79 872 5323                                                     \\
 		\textsc{ID:}                      & 8809215211083                                                       \\
-		\textsc{email:}                   & \href{mailto:laurscheepers@gmail.com}{laurscheepers@gmail.com} (personal) \& \href{mailto:laurie@laurcode.com}{laurie@laurcode.com} (work)      \\
+		\textsc{email:}                   & \href{mailto:laurscheepers@gmail.com}{laurscheepers@gmail.com}      \\
 		\textsc{GitHub:}                  & \href{https://github.com/lauriescheepers}{https://github.com/lauriescheepers} \\
 		\textsc{Website:}                 & \href{https://laurcode.com}{https://laurcode.com}
 	\end{tabular}
@@ -89,8 +90,23 @@ ItalicFont = Fontin-Italic.otf
 	\section{Work Experience}
 	\begin{tabular}{r|p{11cm}}
 	
-	    \textsc{May 2018 - Present}  & Service Provider at \href{www.nomanini.com}{Nomanini}
-		\\&\emph{Senior Android Developer}\\&\footnotesize{Freelance, contract-based work for development of Nomanini's Android apps: \href{https://play.google.com/store/apps/details?id=zm.co.broadpay.android}{Broadpay}, Moza D'Agente, and Tikambe (PanAfrica).}\\
+	\textsc Sep 2021 - Present}  & Android Developer at \href{www.kazang.com}{Kazang}
+		\\&\footnotesize{Responsible for maintaining and developing new features on Kazang's native Android vending application \& the vendor onboarding Flutter application. I report directly to the CIO, and later took responsibility for mentoring and coaching two junior hires in the mobile team.}\\
+		
+		\multicolumn{2}{c}{} \\
+	
+	\textsc Sep 2020 - Mar 2021}  & Team Lead - \href{www.1foryou.com}{1ForYou} at \href{www.flash.co.za}{Flash Mobile Vending}
+		\\&\footnotesize{Responsible for managing a team of developers, closely aligned with Product Managers \& Technical Integrations Team, directly reporting to the CTO. Other duties included being primarily responsible for developing the 1ForYou Android app (MVVM architecture). Resigned due to irreconcilable company culture problems.}\\
+		
+		\multicolumn{2}{c}{} \\
+	
+	    \textsc{May 2018 - Sep 2020}  & Android Developer at \href{www.nomanini.com}{Nomanini}
+		\\&\footnotesize{Started working at Nomanini as a freelance developer, later on I joined them to work as a permanent employee for development of Nomanini's Android apps: Awena, Moza D'Agente, Tikambe, Trader Direct and more white-labelled apps (architectures used: MVP, MVVM, MVU)}\\
+		
+		\multicolumn{2}{c}{} \\
+		
+		\textsc{Jul 2020 - Dec 2020}  & Subcontractor at \href{www.warpdevelopment.com}{Warp Development}
+		\\&\emph{Freelance \& Contract-based development work}\\&\footnotesize{Freelance Android development for Warped as a subcontractor for a client of theirs.}\\
 		
 		\multicolumn{2}{c}{} \\
 	
@@ -99,75 +115,58 @@ ItalicFont = Fontin-Italic.otf
 		
 		\multicolumn{2}{c}{} \\
 		
-		\textsc{Nov 2017 - Forever}  & Owner at \href{www.laurcode.com}{LaurCode}
+		\textsc{Nov 2017}  & Owner at \href{www.laurcode.com}{LaurCode}
 		\\&\emph{Freelance \& Contract-based development work}\\&\footnotesize{Decided to take my career to the next step by making my own website and starting to promote myself as an independent freelancer, specializing in mobile development \& design. A detailed history of projects I have been involved in is also available on the site. Go visit \href{https://www.laurcode.com}{laurcode.com} and check it out!\\
 		
 		\multicolumn{2}{c}{} \\
 		
-		\textsc{Mar 2017 - Ongoing}  & Developer at \href{www.sudonum.com}{Sudonum}
-		\\&\emph{Click-To-Call Library}\\&\footnotesize{Private contracting freelance work at Sudonum, a call tracking and communication company, responsible for developing a VoIP library for Android \& Web that uses \href{https://en.wikipedia.org/wiki/WebRTC}{WebRTC} as a communication protocol. There is still ongoing work done scheduled for 2018 when the API's are ready to be consumed by a mobile app.} \\
+		\textsc{Mar 2017 - Nov 2017}  & Developer at \href{www.sudonum.com}{Sudonum}
+		\\&\emph{Click-To-Call Library}\\&\footnotesize{Private contracting freelance work at Sudonum, a call tracking and communication company, responsible for developing a VoIP library for Android \& Web that uses \href{https://en.wikipedia.org/wiki/WebRTC}{WebRTC} as a communication protocol.} \\
 		
 		\multicolumn{2}{c}{} \\
-		\textsc{Sep 2016 - Jan 2018}  & Senior Android Developer at \href{www.kagisomedia.co.za}{Kagiso Media}                                               \\&\emph{Realtime Audio Streaming Apps \& LiveAmp}\\&\footnotesize{Freelance Android developer responsible for releasing new versions of the apps, \href{https://play.google.com/store/apps/details?id=com.kagiso.jacarandafm}{Jacaranda FM},  \href{https://play.google.com/store/apps/details?id=com.kagiso.ecr}{East Coast Radio}, and \href{https://play.google.com/store/apps/details?id=com.kagiso.soundbar}{Soundbar}. I also developed an app for a popular local TV show, called  \href{https://play.google.com/store/apps/details?id=com.kagiso.liveamp}{LiveAmp}. I still occasionally help with development or questions about all these apps for Kagiso. The apps can be viewed (with ratings minimum 4.1 and higher) \href{https://play.google.com/store/apps/developer?id=Kagiso+Media}{here}}. \\
+		\textsc{Sep 2016 - Jan 2018}  & Senior Android Developer at \href{www.kagisomedia.co.za}{Kagiso Media}                                               \\&\emph{Realtime Audio Streaming Apps \& LiveAmp}\\&\footnotesize{Freelance Android developer responsible for releasing new versions of the apps, \href{https://play.google.com/store/apps/details?id=com.kagiso.jacarandafm}{Jacaranda FM},  \href{https://play.google.com/store/apps/details?id=com.kagiso.ecr}{East Coast Radio}, and \href{https://play.google.com/store/apps/details?id=com.kagiso.soundbar}{Soundbar}. I also developed an app for a popular local TV show, called  \href{https://play.google.com/store/apps/details?id=com.kagiso.liveamp}{LiveAmp}. The apps can be viewed (with ratings minimum 4.1 and higher) \href{https://play.google.com/store/apps/developer?id=Kagiso+Media}{here}}. \\
 		
 		\multicolumn{2}{c}{} \\
 		\textsc{Aug 2015 - Sep 2016} & Head of Product Development at \href{www.thereachtrust.org}{The Reach Trust} \\                                                                  &\emph{LevelUp -  Educational Android app} \\
 		                            &\footnotesize{General Head of Dev \& Lead of the Android team creating the  flag-ship product, \textbf{LevelUp}, available on the \href{https://play.google.com/store/apps/details?id=org.mylevelup}{Play Store}. The Reach Trust is a public benefit organization that became their own business after \href{https://memeburn.com/2015/10/mxit-confirms-its-shutting-up-shop/}{Mxit's end}, mainly focusing on \href{https://it-online.co.za/2015/10/26/reach-trust-will-use-mxit-for-education/}{education and improving people's lives}. All of The Reach Trust apps (together with their ratings) can be found on the \href{https://play.google.com/store/apps/dev?id=7356513661681471434}{Play Store}.} \\
-		 
-		\multicolumn{2}{c}{} \\
-		\textsc{Jan 2014 - Aug 2015} & Senior Android Developer at \href{www.mxit.com}{Mxit} \\
-		                             & \emph{Team Lead of Mxit Android Client} \\
-		                             & \emph{Team Lead of Broadcasts POC - One-to-many communication app} \\
-		                             & \footnotesize{Full-time work as team lead, managing the \href{https://en.wikipedia.org/wiki/Mxit}{Mxit} developers of the Android client (average rating of 4.6 while on the Play Store), while maintaining the J2ME and Blackberry apps. During this time we focused on implementing \textsc{VoIP} functionality and a new feature called \textit{Make Friends}. I continued working for Mxit until the very end, when the servers were switched off.} \\
-		 
-		\multicolumn{2}{c}{} \\
-		\textsc{Jan 2012 - Jan 2014} & Developer at \href{www.mxit.com}{Mxit} \\
-		                             & \emph{Mxit - Social networking and instant messaging app} \\
-		                             & \footnotesize{Started my career as developer on the J2ME version of Mxit, used by millions of people around the world. Climbed the rungs of the ladder, later becoming team lead of J2ME and Blackberry teams and also finally joining the Android team (circa 2013), which I was very excited about. For history regarding the rise \& fall of Mxit, read \href{https://en.wikipedia.org/wiki/Mxit}{here} and \href{https://www.moneyweb.co.za/news/companies-and-deals/how-did-mxit-go-so-wrong/}{here}.} \\
 		
-	\end{tabular}
+	\end{tabular} \\ \\
+	
+	\footnotesize{More work experience follows on next page\ldots}
 	
 \end{absolutelynopagebreak}
 
 \begin{absolutelynopagebreak}
-	
-	\section{Courses}
-	\begin{tabular}{r|p{11cm}}
-	
-		\textsc{2018} &                                                                                                                  
-		\href{https://www.udemy.com/ios-11-app-development-bootcamp/learn/v4/overview}{iOS 11 \& Swift 4 - The Complete iOS App Development Bootcamp}\\&\footnotesize{A planned iOS course (already enrolled) that I will complete in 2018. Decided to focus on Swift rather than Objective C.} \\
-		
+    
+    \section{Work Experience}
+    \begin{tabular}{r|p{11cm}}
+
+		\textsc{Jan 2014 - Aug 2015} & Senior Android Developer at \href{www.mxit.com}{Mxit} \\
+		                             & \emph{Team Lead of Mxit Android Client} \\
+		                             & \emph{Team Lead of Broadcasts POC - One-to-many communication app} \\
+		                             & \footnotesize{Full-time work as team lead, managing the \href{https://en.wikipedia.org/wiki/Mxit}{Mxit} developers of the Android client (average rating of 4.6 while on the Play Store), while maintaining the J2ME and Blackberry apps. I continued working for Mxit until the very end, when the servers were switched off.} \\
+		 
 		\multicolumn{2}{c}{} \\
-		\textsc{2018} &                                                                                                                  
-		\href{https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/overview}{The Complete React Native and Redux Course}\\&\footnotesize{Planned React Native course (already enrolled) that I will complete in 2018. React is the only cross-platform technology that I want to learn as the others are not as advanced.} \\
-		
-		\multicolumn{2}{c}{} \\
-		\textsc{2017} &                                                                                                                  
-		\href{https://www.udemy.com/app-design-with-sketch-ui-and-ux/}{App Design with Sketch: UI and UX}\\&\footnotesize{A design course about Sketch that I am currently following to upskill my design work.} \\
-		
-		\multicolumn{2}{c}{} \\
-		\textsc{2017} &                                                                                                                  
-		\href{https://www.udemy.com/aftereffects/}{After Effects CS6: The Complete Guide to Adobe After Effects}\\&\footnotesize{A design course about Adobe After Effects that I am currently following to upskill myself in creating more advanced animations.} \\
-		
-		\multicolumn{2}{c}{} \\
-		\textsc{2016} & \href{https://www.udemy.com/unitycourse/learn/v4/}{Learn to Code by Making Games - Complete C\# Unity Developer} \\&\footnotesize{Course in Unity, for developing cross-platform games.} \\
+		\textsc{Jan 2012 - Jan 2014} & Developer at \href{www.mxit.com}{Mxit} \\
+		                             & \emph{Mxit - Social networking and instant messaging app} \\
+		                             & \footnotesize{Started my career as developer on the J2ME version of Mxit, used by millions of people around the world. Later I was promoted to team lead of J2ME and Blackberry teams and also joining the Android team - exciting times!.} \\
 		
 	\end{tabular}
 	
-	\section{Personal Projects}
+	\section{Personal Projects \copyright LaurCode}
 	\begin{tabular}{r|p{11cm}}
 	
 	    \textsc{2018} &                                                                                                                  
-		Retire\\&\footnotesize{A financial Android app (work in progress), simply called Retire. This "robo-advice" app only has a few financial inputs required and then will show a nice output of your money accumulation phase and the drawdown phase of all those savings over the years that you can use at your leisure in your retirement. Basically it's going to be a simple, user-friendly retirement-planning app available for anyone. \textregistered LaurCode \\
+		Retire\\&\footnotesize{A financial Android app (work in progress), simply called Retire. This "robo-advice" app only requires a few financial inputs and then will show a nice output of your money accumulation phase and the drawdown phase of all those savings over the years that you can use at your leisure in your retirement. Basically it's going to be a simple, user-friendly retirement-planning app available for anyone. \\
 		
 		\multicolumn{2}{c}{} \\
 		
 		\textsc{2017} &                                                                                                                  
-		\href{www.laurcode.com}{www.laurcode.com}\\&\footnotesize{The website I created to represent my freelance developer business, LaurCode. It contains some other interesting things as well, like album reviews, and I also publish a blog article once in a blue moon.} \\
+		\href{www.laurcode.com}{www.laurcode.com}\\&\footnotesize{The website I created to represent my freelance developer business, LaurCode. It contains some other interesting things as well, like album reviews, and I also publish a blog article once in a blue moon. } \\
 		
 		\multicolumn{2}{c}{} \\
 		\textsc{2015} &                                                                                                                  
-		\href{https://play.google.com/store/apps/details?id=za.co.inflationcalc}{SA Inflation Calculator}\\&\footnotesize{A simple Android app that calculates what historical, inflation adjusted money is worth today in South Africa.} \\
+		\href{https://play.google.com/store/apps/details?id=za.co.inflationcalc}{SA Inflation Calculator}\\&\footnotesize{A simple Android app that calculates what historical, inflation adjusted money is worth today in South Africa. } \\
 		
 		\multicolumn{2}{c}{} \\
 		
@@ -196,25 +195,25 @@ ItalicFont = Fontin-Italic.otf
 		&\normalsize \textsc{Matric Results}: 2nd Dux, 6 A's, 91\% average, subject results available on request. \\
 		
 	\end{tabular}
-	
-\end{absolutelynopagebreak}
-
-\begin{absolutelynopagebreak}
 
 	%Section: Scholarships and additional info
 \section{Honours and Rewards}
 	\begin{tabular}{r|p{11cm}}
 		\textsc{2002-2006}  & Paarl Boys High: Top 10 academically each year, awarded full academic honours in Grade 11 and awarded 2nd Dux Medal in Matric. \\
 		\textsc{2006}       & James Grace Eisteddfod Cup: Best classical guitarist.                                                                          \\
-		\textsc{2006}       & Matric results: Achieved 3rd place in Western Cape in Latin.                                                                   \\
+		\textsc{2006}       & Matric results: Achieved 3rd place in Western Cape, SA in Latin.                                                                   \\
 		\textsc{2006}       & Placed 14th nationwide in SA Taalbond Bilingualism Examination.                                                                \\
 		\textsc{2006}       & Placed 78th nationwide in De Beers English Olympiad.                                                                           \\
 		\textsc{2008, 2009} & Invited to join Golden Key International Honour Society (top 15\% of undergraduate students).                                  
 	\end{tabular}
+	
+\end{absolutelynopagebreak}
 
 %Section: Languages
 
 \addtolength{\voffset}{-0.4cm} % A bit of extra negative margin at top
+
+\begin{absolutelynopagebreak}
 	
 	\section{Languages}
 	\begin{tabular}{r|p{11cm}}
@@ -227,14 +226,18 @@ ItalicFont = Fontin-Italic.otf
 	
 	\textit{Feel free to ask more details about my skills in development and tools used etc. The following is just a structured summary.} \\
 	
-	\footnotesize{In general I believe that a programming language is just a language to learn, get used to the syntax and gain experience in - all languages differ in their feature sets and also their purposes, one is not more difficult or \textit{better} than the other, they are just different in their approaches to general Computer Science principles.} \\
+	\footnotesize{In general I believe that any programming language is just one to learn and familiarize yourself to get some hands-on experience when using it, thereby learning as you go along, just like maths or any natural language that is spoken, practising until you are fluent - all programming languages differ in their feature sets and their purposes, one is not more difficult or necessarily \textit{better} than the other, they are just different in their approaches to general Computer Science principles.} \\
 	
 	\begin{tabular}{r|p{11cm}}
 		
-		\textsc{Programming Languages}    & \textbf{Advanced}: \textsc{Java 1.3 - 1.8 (Mobile: Android, Blackberry, J2ME)}, \textsc{C}, \textsc{C++} \\
-		                                  & \emph{Intermediate}: \textsc{C\#}, \textsc{HTML}, \textsc{JavaScript}, \textsc{CSS}, \textsc{Python}, Excel, VB, MarkDown, {\fb \LaTeX} \setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} \\
-		                                  & \emph{Starting to upskill myself in}: \textsc{Swift}, \textsc{Objective-C}, \textsc{React Native} \\
+		\textsc{Programming Languages}    & \textbf{Advanced}: \textsc{Java (Mobile: Android, Blackberry, J2ME)}, \textsc{Kotlin}, \textsc{C}, \textsc{C++} \\
+		                                  & \emph{Intermediate}: \textsc{C\#}, \textsc{HTML},  \textsc{JavaScript}, \textsc{CSS}, \textsc{Python}, Excel, VB, MarkDown, {\fb \LaTeX} \setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf} \\
+		                                  & \emph{Knowledgeable in}: \textsc{Swift}, \textsc{Objective-C}, \textsc{Golang}, \textsc{Dart}\\
 		                                  
+		\multicolumn{2}{c}{}\\
+		
+		\textsc{Architecture}             & \textsc{EDA, MVP, MVVM, MVU} \\
+		
 		\multicolumn{2}{c}{}\\
 		
 		\textsc{Design}                   & \textsc{Learning more as I go along}: \textsc{Adobe Photoshop}, \textsc{Adobe Illustrator}, \textsc{Adobe After Effects}, \textsc{Sketch}, \textsc{Paint.NET}, Various Online Tools (AppLaunchPad, Android Asset Generator, FlatIcon, SVG things, etc\ldots) \\
@@ -245,11 +248,19 @@ ItalicFont = Fontin-Italic.otf
 		 
 		\multicolumn{2}{c}{} \\
 		 
-		\textsc{Development Environments} & \textsc{Android Studio}, \textsc{IntelliJ}, \textsc{WebStorm}, \textsc{Eclipse}, \textsc{Visual Studio}, \textsc{XCode}, \textsc{Adobe Creative Cloud Products} \\
+		\textsc{Development Environments} & \textsc{Android Studio}, \textsc{IntelliJ}, \textsc{WebStorm}, \textsc{Eclipse}, \textsc{Visual Studio Code}, \textsc{XCode}, \textsc{Adobe Creative Cloud Products}, proficient with CLI's \\
 		 
 		\multicolumn{2}{c}{} \\
 		 
-		\textsc{Version Control Systems}  & \textsc{Git} (GitHub, GitLab), \textsc{SVN}, Own versioning used on cloud storage for other things: \textsc{Google Drive}, \textsc{DropBox}, \textsc{Confluence}, \textsc{iCloud} \\    
+		\textsc{Version Control Systems}  & \textsc{Git} (GitHub, GitLab, Bitbucket), \textsc{SVN}, Own versioning used on cloud storage for other things: \textsc{Google Drive}, \textsc{DropBox}, \textsc{Confluence}, \textsc{iCloud} \\
+		
+		\multicolumn{2}{c}{} \\
+		
+		\textsc{CI/CD}  & \textsc{Gitlab}, \textsc{GoCD}, \textsc{TeamCity}, \textsc{Azure DevOps} \\
+		
+		\multicolumn{2}{c}{} \\
+		
+		\textsc{Tooling}  & \textsc{GCS}, \textsc{Firebase}, \textsc{Fabric}, \textsc{Jira}, \textsc{YouTrack}, \textsc{Asana}, \textsc{Kanboard}, \textsc{Trello}, \textsc{Retool}, \textsc{Nuclino}, \textsc{Slack}, \textsc{MS Teams}, \textsc{DevOps} \\ 
 		 
 	\end{tabular}
 	
